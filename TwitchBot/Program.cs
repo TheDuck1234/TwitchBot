@@ -29,8 +29,8 @@ namespace TwitchBot
                     if (message.ToLower().Contains("!add"))
                     {
                         string[] html = message.Split('!');
-                        Console.WriteLine(html[2].Substring(4));
-                        System.Diagnostics.Process.Start(html[2].Substring(4));
+                        Console.WriteLine("open link: "+html[1].Substring(4));
+                        System.Diagnostics.Process.Start(html[1].Substring(4));
                     }
                     if (message.ToLower().Contains("!uptime"))
                     {
