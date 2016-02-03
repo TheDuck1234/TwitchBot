@@ -27,6 +27,12 @@ namespace TwitchBot
                     {
                         irc.SendChatMessage("Testing Testing");
                     }
+                    if (message.ToLower().Contains("!add"))
+                    {
+                        string[] html = message.Split('!');
+                        Console.WriteLine(html[2].Substring(4));
+                        System.Diagnostics.Process.Start(html[2].Substring(4));
+                    }
                     if (message.ToLower().Contains("!uptime"))
                     {
                         DateTime time = new DateTime(stopWatch.ElapsedTicks);

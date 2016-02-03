@@ -4,3 +4,9 @@ c:\users\anders petersen\documents\visual studio 2015\Projects\TwitchBot\TwitchB
 c:\users\anders petersen\documents\visual studio 2015\Projects\TwitchBot\TwitchBot\obj\Debug\TwitchBot.csprojResolveAssemblyReference.cache
 c:\users\anders petersen\documents\visual studio 2015\Projects\TwitchBot\TwitchBot\obj\Debug\TwitchBot.exe
 c:\users\anders petersen\documents\visual studio 2015\Projects\TwitchBot\TwitchBot\obj\Debug\TwitchBot.pdb
+C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\bin\Debug\TwitchBot.exe.config
+C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\obj\Debug\TwitchBot.pdb
+C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\obj\Debug\TwitchBot.csprojResolveAssemblyReference.cache
+C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\bin\Debug\TwitchBot.exe
+C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\bin\Debug\TwitchBot.pdb
+C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\obj\Debug\TwitchBot.exe
