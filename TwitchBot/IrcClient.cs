@@ -48,11 +48,17 @@ namespace TwitchBot
         {
             SendIrcMessage(":"+_userName+"!"+_userName+"@"+_userName
                 +"tmi.twitch.tv PRIVMSG #"+ _channel+ " :"+message);
+            Console.WriteLine("cogwheelbot :"+message);
         }
 
         public string ReadMessage()
         {
             string message = _inputReader.ReadLine();
+            string[] splitStrings = message.Split('#');
+            if (splitStrings.Length == 2)
+            {
+                return splitStrings[1];
+            }
             return message;
         }
     }

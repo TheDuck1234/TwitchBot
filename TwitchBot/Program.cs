@@ -20,7 +20,6 @@ namespace TwitchBot
             while (true)
             {
                 string message = irc.ReadMessage();
-
                 if(!string.IsNullOrEmpty(message)) {
                     Console.WriteLine(message);
                     if (message.ToLower().Contains("!hallo"))
@@ -31,8 +30,8 @@ namespace TwitchBot
                     {
                         DateTime time = new DateTime(stopWatch.ElapsedTicks);
                         string uptime = time.ToString("HH:mm:ss");
-                        irc.SendChatMessage("Time: "+uptime);
-
+                        irc.SendChatMessage(time.Hour+ " hours "+ time.Minute + " mins");
+                        irc.SendChatMessage(uptime);
                     }
                 }
 
