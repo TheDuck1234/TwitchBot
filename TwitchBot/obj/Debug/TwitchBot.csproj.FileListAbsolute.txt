@@ -10,3 +10,4 @@ C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\obj\Debug\TwitchBot.csprojResol
 C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\bin\Debug\TwitchBot.exe
 C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\bin\Debug\TwitchBot.pdb
 C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\obj\Debug\TwitchBot.exe
+C:\Users\Anders\Source\Repos\TwitchBot\TwitchBot\bin\Debug\BlockNLoad.xml

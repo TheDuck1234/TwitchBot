@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace TwitchBot
 {
@@ -16,7 +17,10 @@ namespace TwitchBot
         {
             var irc = new IrcClient("irc.twitch.tv",6667, "cogwheelbot", "oauth:ffiiryof5w501xlz43qbk75k9xcmv1");
             irc.JoinRoom("faddei");
-            var stopWatch = Stopwatch.StartNew(); 
+            var stopWatch = Stopwatch.StartNew();
+            XmlDocument doc = new XmlDocument();
+            doc.Load("BlockNLoad.xml");
+
             while (true)
             {
                 string message = irc.ReadMessage();
@@ -31,6 +35,20 @@ namespace TwitchBot
                         string[] html = message.Split('!');
                         Console.WriteLine("open link: "+html[1].Substring(4));
                         System.Diagnostics.Process.Start(html[1].Substring(4));
+                    }
+                    if (message.ToLower().Contains("!cogwheel"))
+                    {
+                        List<string> list = new List<string>();
+                        Random rnd = new Random();
+                        int r = rnd.Next(list.Count);
+                        XmlNode node = doc.SelectSingleNode("BlockNLoad");
+
+                        XmlNodeList prop = node.SelectNodes("Cogwheel");
+                        foreach (XmlNode n in prop)
+                        {
+                            list.Add(n.InnerText);
+                        }
+                        irc.SendChatMessage((string)list[r]);
                     }
                     if (message.ToLower().Contains("!uptime"))
                     {
